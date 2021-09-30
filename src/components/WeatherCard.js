@@ -27,4 +27,4 @@ function WeatherCard({
     </section>;
 }
 
-export default WeatherrCard;
+export default WeatherCard;

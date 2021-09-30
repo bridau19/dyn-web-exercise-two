@@ -1,6 +1,10 @@
-.WeatherCard {
-  border: 1px solid black;
-  border-radius: 8px;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+  color: blue;
 }
 
 .App {
@@ -9,36 +13,32 @@
   padding: 0 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-size: 55px;
+  font-weight: 300;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.WeatherCard {
+  background-color: #DEF1FF;
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.WeatherCard p:first-child {
+  text-align: center;
 }
+
+.WeatherCard p:nth-child(2) {
+  font-size: 60px;
+  margin: 15px;
+  text-align: center;
+}
+

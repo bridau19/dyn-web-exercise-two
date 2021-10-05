@@ -62,7 +62,7 @@ function Home() {
             <header>
                 <p><a href='/?city=paris'>Paris</a></p>
                 <p><a href='/?city=tokyo'>Tokyo</a></p>
-                <p><a href='/?city=madrid'>Madrid</a></p>
+                <p><a href='/?city=rio'>Rio</a></p>
                 <p><a href='/?city=vancouver'>Vancouver</a></p>
 
             </header>

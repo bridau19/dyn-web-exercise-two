@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:visited {
@@ -32,13 +32,19 @@ a:visited {
   padding: 25px;
 }
 
-.WeatherCard p:first-child {
+.WeatherCard p:nth-child(2) {
   text-align: center;
 }
 
-.WeatherCard p:nth-child(2) {
+.WeatherCard p:nth-child(3) {
   font-size: 60px;
   margin: 15px;
   text-align: center;
 }
 
+.WeatherImageWrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  padding: 20px 0 10px 0;
+}

@@ -17,6 +17,7 @@ function WeatherCard({
 
         <p><strong>{ currentTemp }°F</strong></p>
 
+        <div className="WeatherInfoWrapper">
         <p>Weather Type: <strong>{ weatherType }</strong></p>
         
         <p>Low Temperature: <strong>{ lowTemp }</strong>°F</p>
@@ -28,6 +29,7 @@ function WeatherCard({
         <p>Humidity: <strong>{ humidity }%</strong> </p>
 
         <p>Wind Speed: <strong>{ windSpeed } mph</strong></p>
+        </div>
 
     </section>;
 }

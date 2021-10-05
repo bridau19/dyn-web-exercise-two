@@ -3,10 +3,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:visited {
-  color: blue;
-}
-
 .App {
   margin: 0 auto;
   max-width: 1000px;
@@ -19,32 +15,49 @@ a:visited {
   text-align: center;
 }
 
-.App header {
+.Navigation {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+
+}
+
+.Navigation a {
+  text-decoration: none;
+}
+
+.Navigation a.Active {
+  border-bottom: 1.5px solid blue;
+}
+
+.Navigation a:visited {
+  color: blue;
 }
 
 .WeatherCard {
   background-color: #DEF1FF;
   border: 1px solid blue;
   border-radius: 8px;
+  position: absolute;
+  left: 30%;
   padding: 25px;
-}
-
-.WeatherCard p:nth-child(2) {
+  right: 30%;
   text-align: center;
 }
 
-.WeatherCard p:nth-child(3) {
+.WeatherCard > p:nth-child(3) {
   font-size: 60px;
   margin: 15px;
-  text-align: center;
 }
 
 .WeatherImageWrapper {
   display: flex;
   justify-content: center;
-  font-size: 80px;
+  font-size: 95px;
   padding: 20px 0 10px 0;
+}
+
+.WeatherInfoWrapper {
+  display: inline-block;
+  text-align: left;
 }

@@ -47,9 +47,9 @@ function Home() {
         if (!weatherData) return {};
         console.log(weatherData);
         return ({
-            currentTemp: weatherData.main.temp,
-            highTemp: weatherData.main.temp_max,
-            lowTemp: weatherData.main.temp_min,
+            currentTemp: Math.round(weatherData.main.temp),
+            highTemp: Math.round(weatherData.main.temp_max),
+            lowTemp: Math.round(weatherData.main.temp_min),
             humidity: weatherData.main.humidity,
             windSpeed: weatherData.wind.speed,
             cloudiness: weatherData.clouds.all,
@@ -60,10 +60,12 @@ function Home() {
     return (
         <main className="App">
             <header>
-                <p><a href='/?city=paris'>Paris</a></p>
-                <p><a href='/?city=tokyo'>Tokyo</a></p>
-                <p><a href='/?city=rio'>Rio</a></p>
-                <p><a href='/?city=vancouver'>Vancouver</a></p>
+                <nav className="Navigation">
+                <a href='/?city=paris' className={city==="paris" && "Active"}>Paris</a>
+                <a href='/?city=tokyo' className={city==="tokyo" && "Active"}>Tokyo</a>
+                <a href='/?city=rio' className={city==="rio" && "Active"}>Rio</a>
+                <a href='/?city=vancouver' className={city==="vancouver" && "Active"}>Vancouver</a>
+                </nav>
 
             </header>
             <h1>{ city }</h1>

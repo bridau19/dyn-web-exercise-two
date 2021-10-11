@@ -10,15 +10,18 @@
 }
 
 .App h1 {
-  font-size: 55px;
+  color: blue;
+  font-size: 30px;
   font-weight: 300;
+  margin: 55px 0 25px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .Navigation {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 55px;
 
 }
 
@@ -35,7 +38,6 @@
 }
 
 .WeatherCard {
-  background-color: #DEF1FF;
   border: 1px solid blue;
   border-radius: 8px;
   position: absolute;
@@ -60,4 +62,10 @@
 .WeatherInfoWrapper {
   display: inline-block;
   text-align: left;
+}
+
+@media (min-width: 800px) {
+  .App h1 {
+    font-size: 40px;
+  }
 }

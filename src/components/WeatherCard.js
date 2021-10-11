@@ -10,7 +10,9 @@ function WeatherCard({
     humidity, 
     windSpeed,
 }) {
-    return <section className="WeatherCard">
+    return <section className="WeatherCard" style={{
+        backgroundColor: `rgba(222, 240, 255, ${cloudiness / 100})`,
+    }}>
         <div className="WeatherImageWrapper"> <WeatherImage weatherType={ weatherType } /> </div>
 
         <p> Current Temperature </p>

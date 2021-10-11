@@ -66,7 +66,6 @@ function Home() {
                 <a href='/?city=rio' className={city==="rio" && "Active"}>Rio</a>
                 <a href='/?city=vancouver' className={city==="vancouver" && "Active"}>Vancouver</a>
                 </nav>
-
             </header>
             <h1>{ city }</h1>
             <WeatherCard
